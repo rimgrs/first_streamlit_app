@@ -63,7 +63,7 @@ if streamlit.button('Get Fruit Load List'):
 
 # Allow the end users to add fruit ti the list
 #************
-
+import snowflake.connector
 #This will not work correctly ,but just go with it for now
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
